@@ -78,6 +78,7 @@ controller.setupWebserver(process.env.PORT, function (err, webserver) {
     });
 });
 
+// EDIT ME!
 controller.on('slash_command', function (slashCommand, message) {
 
     switch (message.command) {
@@ -87,14 +88,23 @@ controller.on('slash_command', function (slashCommand, message) {
             if (message.token !== process.env.VERIFICATION_TOKEN) return; //just ignore it.
 
             if (message.text === "") {
-              // Get three random foodmoji from our master list
-              foodmoji = [];
-              var food1 = foodmoji[Math.floor(Math.random() * foodmoji.length)];
-              var food2 = foodmoji[Math.floor(Math.random() * foodmoji.length)];
-              var food3 = foodmoji[Math.floor(Math.random() * foodmoji.length)];
+              // Master list of foodmoji
+              foodmoji = [":coffee:",":tea:",":sake:",":baby_bottle:", \
+                ":beer:",":beers:",":cocktail:",":tropical_drink:", \
+                ":wine_glass:",":fork_and_knife:",":pizza:",":hamburger:", \
+                ":fries:",":poultry_leg:",":meat_on_bone:",":spaghetti:", \
+                ":curry:",":fried_shrimp:",":bento:",":sushi:",":fish_cake:", \
+                ":rice_ball:",":rice_cracker:",":rice:",":ramen:",":stew:", \
+                ":oden:",":dango:",":egg:",":bread:",":doughnut:",":custard:", \
+                ":icecream:",":ice_cream:",":shaved_ice:",":birthday:", \
+                ":cake:",":cookie:",":chocolate_bar:",":candy:",":lollipop:", \
+                ":honey_pot:",":apple:",":green_apple:",":tangerine:", \
+                ":lemon:",":cherries:",":grapes:",":watermelon:", \
+                ":strawberry:",":peach:",":melon:",":banana:",":pear:", \
+                ":pineapple:",":sweet_potato:",":eggplant:",":tomato:", \
+                ":corn:"];
+              // TODO Get three random foods
 
-              slashCommand.replyPublic(message, "How about having " +
-                  food1 + " + " + food2 + " + " + food3 + " tonight?");
             }
 
             // /foodme help displays this message

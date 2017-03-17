@@ -1,4 +1,4 @@
-# FoodMe
+# Food Me!
 
 Using Botkit, this serves as a simple example to get started using slash commands on Slack. Foodme mashes together three emoji to present you with a new food combination each time.
 
