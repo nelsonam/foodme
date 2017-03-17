@@ -4,4 +4,4 @@ Using Botkit, this serves as a simple example to get started using slash command
 
 Just run `/foodme`, and watch the magic happen.
 
-Follow along with [the tutorial .](https://medium.com/slack-developer-blog/easy-peasy-slash-commands-getting-started-c37ff3f14d3e#.nfr4px2vi)
+Follow along with [the tutorial.](https://medium.com/slack-developer-blog/easy-peasy-slash-commands-getting-started-c37ff3f14d3e#.nfr4px2vi)
